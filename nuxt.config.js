@@ -12,7 +12,7 @@ export default {
   head: {
     title: "site-demo-nike",
     htmlAttrs: {
-      lang: "en",
+      lang: "ja",
     },
     meta: [
       { charset: "utf-8" },
