@@ -1,10 +1,17 @@
 .c-jordan-logo {
   width: 20px;
   height: 20px;
-  margin: 10px;
+  margin: 8px 5px 0px 10px;
+  &:hover {
+    opacity: $base-opacity;
+  }
 }
 
 .c-nike-logo {
   width: 60px;
-  height: 60px;
+  height: 21px;
+  margin-top: 8px;
+  &:hover {
+    opacity: $base-opacity;
+  }
 }

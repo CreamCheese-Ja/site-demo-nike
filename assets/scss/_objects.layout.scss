@@ -1,5 +1,70 @@
 .o-layout-header {
-  padding: 0 38px 0 36px;
+  background-color: $color-gray-light;
+  > .headerTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 42px 0 40px;
+    align-items: center;
+    > .menu {
+      display: flex;
+      > .item {
+        margin: 0 6px;
+        font-size: $font-size-small;
+        opacity: $opacity-weak;
+        > .link {
+          &:hover {
+            color: $color-gray-dark;
+          }
+        }
+      }
+    }
+  }
+  > .headerMain {
+    position: relative;
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 34px 9px 48px;
+    align-items: center;
+    > .menu {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      margin-top: -4px;
+      > .item {
+        > .link {
+          padding: 16px 12px 18px;
+          font-weight: 500;
+          &:hover {
+            border-bottom: 2.8px solid $color-black;
+          }
+        }
+      }
+    }
+    > .operationArea {
+      display: flex;
+      > .iconArea {
+        margin-left: 20px;
+      }
+    }
+  }
+  > .headerBottom {
+    background-color: $color-gray-light;
+    border-bottom: 1px solid $color-gray;
+    > .message {
+      font-size: $font-size-medium;
+      text-align: center;
+      margin-top: 10px;
+      line-height: 20px;
+      > .subMessage {
+        font-size: $font-size-small;
+        > .link {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 .o-layout-main {

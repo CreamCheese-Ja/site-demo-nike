@@ -5,8 +5,24 @@ html {
 * {
   line-height: $base-line-height;
   color: $color-black;
+  font-family: $base-font-family;
 }
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  background: none;
 }
