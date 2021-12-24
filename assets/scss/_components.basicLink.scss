@@ -1,0 +1,9 @@
+.c-basic-link {
+  display: inline-block;
+  border-bottom: solid 1px $color-black-light;
+  padding-bottom: 1px;
+  &:hover {
+    border-bottom: solid 2px $color-black-light;
+    padding-bottom: 0px;
+  }
+}

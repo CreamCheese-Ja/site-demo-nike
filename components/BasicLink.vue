@@ -1,5 +1,5 @@
 <template>
-  <a :class="anotherClassName" class="c-basic-button">{{ label }}</a>
+  <a href="" class="c-basic-link">{{ label }}</a>
 </template>
 
 <script lang="ts">
@@ -9,10 +9,6 @@ export default {
       type: String,
       default: "",
       required: true,
-    },
-    anotherClassName: {
-      type: String,
-      default: "",
     },
   },
 };

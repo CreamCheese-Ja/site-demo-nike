@@ -3,8 +3,13 @@
 @import "generic.normalize";
 @import "generic.reset";
 
+@import "elements.headings";
+
 @import "objects.layout";
 
 @import "components.logo";
 @import "components.searchBar";
 @import "components.headerIcon";
+@import "components.topImage";
+@import "components.basicButton";
+@import "components.basicLink";

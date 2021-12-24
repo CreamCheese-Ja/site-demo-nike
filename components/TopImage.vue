@@ -1,18 +1,19 @@
 <template>
-  <a :class="anotherClassName" class="c-basic-button">{{ label }}</a>
+  <img :src="imageSrc" :alt="imageAlt" class="c-top-image" />
 </template>
 
 <script lang="ts">
 export default {
   props: {
-    label: {
+    imageSrc: {
       type: String,
       default: "",
       required: true,
     },
-    anotherClassName: {
+    imageAlt: {
       type: String,
       default: "",
+      required: true,
     },
   },
 };

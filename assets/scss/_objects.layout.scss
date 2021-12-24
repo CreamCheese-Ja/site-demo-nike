@@ -24,7 +24,7 @@
     background-color: $color-white;
     display: flex;
     justify-content: space-between;
-    padding: 10px 34px 9px 48px;
+    padding: 10px 34px 10px 48px;
     align-items: center;
     > .menu {
       position: absolute;
@@ -37,7 +37,7 @@
           padding: 16px 12px 18px;
           font-weight: 500;
           &:hover {
-            border-bottom: 2.8px solid $color-black;
+            border-bottom: 2.8px solid $color-black-light;
           }
         }
       }
@@ -55,7 +55,8 @@
     > .message {
       font-size: $font-size-medium;
       text-align: center;
-      margin-top: 10px;
+      padding-top: 7px;
+      padding-bottom: 2px;
       line-height: 20px;
       > .subMessage {
         font-size: $font-size-small;
@@ -69,4 +70,46 @@
 
 .o-layout-main {
   margin: 0 56px;
+  > .sectionArea {
+    margin-bottom: 80px;
+    > .link {
+      &.-positionRel {
+        position: relative;
+      }
+      > .content {
+        text-align: center;
+        margin-top: 40px;
+        &.-positionAbsLeft {
+          text-align: initial;
+          position: absolute;
+          top: -160px;
+          left: 30px;
+        }
+        > .textArea {
+          margin-bottom: 15px;
+          > .title {
+            margin-bottom: 30px;
+            opacity: $opacity-weak;
+            &.-white {
+              color: $color-white;
+              opacity: initial;
+            }
+          }
+          > .message {
+            opacity: $opacity-weak;
+            width: 60%;
+            margin: auto;
+          }
+        }
+        > .buttonArea {
+          width: 60%;
+          margin: auto;
+          &.-positionAbsLeft {
+            width: initial;
+            margin: initial;
+          }
+        }
+      }
+    }
+  }
 }

@@ -4,8 +4,9 @@ html {
 
 * {
   line-height: $base-line-height;
-  color: $color-black;
+  color: $color-black-light;
   font-family: $base-font-family;
+  font-weight: 500;
 }
 
 a {
@@ -17,9 +18,13 @@ li {
 }
 
 button {
+  background: none;
   background-color: transparent;
   border: none;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
 }
 
