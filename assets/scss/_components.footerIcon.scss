@@ -1,0 +1,11 @@
+.c-icon-area {
+  margin-left: 10px;
+  > .icon {
+    width: 30px;
+    height: 30px;
+    fill: $color-gray-dark;
+    &:hover {
+      fill: $color-white;
+    }
+  }
+}

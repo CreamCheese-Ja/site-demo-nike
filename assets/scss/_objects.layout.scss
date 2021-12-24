@@ -113,3 +113,35 @@
     }
   }
 }
+
+.o-layout-footer {
+  > .content {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-black;
+    padding: 40px 40px 50px;
+    > .menuArea {
+      display: flex;
+      > .menu {
+        width: 260px;
+        > .menuItem {
+          margin-bottom: 4px;
+          &.-sub {
+            margin-bottom: 0px;
+          }
+          > .link {
+            color: $color-white;
+            font-size: $font-size-medium;
+            &.-sub {
+              font-size: $font-size-small;
+              opacity: $base-opacity;
+              &:hover {
+                opacity: initial;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
