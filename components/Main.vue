@@ -54,7 +54,7 @@
         />
         <div class="content">
           <div class="textArea">
-            <h1 class="title">JORDAN x PARIS SAINT-GERMAIN コレクション</h1>
+            <h4 class="title">JORDAN x PARIS SAINT-GERMAIN コレクション</h4>
             <p class="message">
               高級感と伝説の風格を備えるジョーダンブランドとパリ・サンジェルマン。<br />
               一味違うカラーと斬新なシルエットで、コラボレーションを新たな次元へ。
@@ -74,7 +74,7 @@
         />
         <div class="content -positionAbsLeft">
           <div class="textArea">
-            <h1 class="title -white">冬の運動に最適な最新コレクション。</h1>
+            <h4 class="title -white">冬の運動に最適な最新コレクション。</h4>
           </div>
           <div class="buttonArea -positionAbsLeft">
             <BasicButton label="コレクションを見る" anotherClassName="-white" />
@@ -82,5 +82,55 @@
         </div>
       </a>
     </section>
+    <section class="sectionArea">
+      <a href="" class="link -noLink">
+        <div class="content -left">
+          <div class="textArea">
+            <h1 class="title">
+              Best Seller - アパレル売れ筋ランキング (12.8-12.21)
+            </h1>
+            <p class="message">
+              上記期間の販売数に基づきます。※クリアランス商品、
+              在庫切れ商品を除く。
+            </p>
+          </div>
+        </div>
+      </a>
+      <div class="sliderArea">
+        <Slider
+          sliderTitle="メンズ"
+          sliderSizeClass="-apparel"
+          :sliderImages="mensApparelRanking"
+        />
+        <Slider
+          sliderTitle="ウィメンズ"
+          sliderSizeClass="-apparel"
+          :sliderImages="womensApparelRanking"
+        />
+      </div>
+    </section>
   </main>
 </template>
+
+<script lang="ts">
+export default {
+  data() {
+    return {
+      mensApparelRanking: [
+        "nike-style-1.jpg",
+        "nike-style-2.jpg",
+        "nike-style-3.jpg",
+        "nike-style-6.jpg",
+        "nike-style-5.jpg",
+      ],
+      womensApparelRanking: [
+        "nike-style-14.jpg",
+        "nike-style-12.jpg",
+        "nike-style-8.jpg",
+        "nike-style-9.jpg",
+        "nike-style-10.jpg",
+      ],
+    };
+  },
+};
+</script>

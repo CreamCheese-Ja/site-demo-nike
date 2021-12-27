@@ -76,6 +76,9 @@
       &.-positionRel {
         position: relative;
       }
+      &.-noLink {
+        pointer-events: none;
+      }
       > .content {
         text-align: center;
         margin-top: 40px;
@@ -84,6 +87,15 @@
           position: absolute;
           top: -160px;
           left: 30px;
+        }
+        &.-left {
+          text-align: left;
+          > .textArea {
+            > .message {
+              width: initial;
+              margin: initial;
+            }
+          }
         }
         > .textArea {
           margin-bottom: 15px;
@@ -110,6 +122,11 @@
           }
         }
       }
+    }
+    > .sliderArea {
+      margin-right: calc(50% - 50vw);
+      margin-left: calc(50% - 50vw);
+      display: flex;
     }
   }
 }
