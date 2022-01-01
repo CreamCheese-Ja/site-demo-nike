@@ -1,9 +1,9 @@
 <template>
-  <a href="">
-    <button class="c-header-icon-button">
+  <nuxt-link to="">
+    <button class="header-icon-button">
       <img :src="imageSrc" :alt="imageAlt" class="icon" />
     </button>
-  </a>
+  </nuxt-link>
 </template>
 
 <script lang="ts">

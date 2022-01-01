@@ -1,5 +1,5 @@
 <template>
-  <img :src="imageSrc" :alt="imageAlt" class="c-top-image" />
+  <img :src="imageSrc" :alt="imageAlt" class="top-image" />
 </template>
 
 <script lang="ts">

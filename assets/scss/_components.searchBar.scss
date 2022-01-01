@@ -1,4 +1,4 @@
-.c-search-form {
+.search-form {
   display: flex;
   align-items: center;
   background-color: rgba(229, 229, 229, $opacity-strong);
@@ -12,7 +12,7 @@
       opacity: 1;
     }
   }
-  > .iconButton {
+  > .icon-button {
     height: 36px;
     width: 40px;
     border-radius: 50%;

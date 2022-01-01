@@ -1,30 +1,30 @@
 <template>
-  <div class="c-slider" :class="sliderSizeClass">
-    <div class="operationArea">
+  <div class="slider">
+    <div class="operation-area">
       <h2 class="title">{{ sliderTitle }}</h2>
-      <div class="buttonArea">
+      <div class="button-area">
         <div class="button">
           <img
             src="../assets/images/allowButtonLeft.svg"
             alt=""
-            class="buttonImage"
+            class="button-image"
           />
         </div>
         <div class="button">
           <img
             src="../assets/images/allowButtonRight.svg"
             alt=""
-            class="buttonImage"
+            class="button-image"
           />
         </div>
       </div>
     </div>
-    <div class="styleArea">
+    <div class="item-area">
       <div v-for="item in sliderImages" :key="item" class="item">
         <img
           :src="require(`../assets/images/${item}`)"
           alt=""
-          class="itemImage"
+          class="item-image"
         />
       </div>
     </div>
@@ -32,6 +32,7 @@
 </template>
 
 <script lang="ts">
+import { PropType } from "vue";
 export default {
   props: {
     sliderTitle: {
@@ -40,13 +41,8 @@ export default {
       required: true,
     },
     sliderImages: {
-      type: Array,
-      default: [],
-      required: true,
-    },
-    sliderSizeClass: {
-      type: String,
-      default: "",
+      type: Array as PropType<string[]>,
+      default: () => [],
       required: true,
     },
   },

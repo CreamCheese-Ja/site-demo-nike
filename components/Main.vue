@@ -1,13 +1,13 @@
 <template>
-  <main class="o-layout-main">
-    <section class="sectionArea">
-      <a href="" class="link">
+  <main class="layout-main">
+    <section class="section-area">
+      <nuxt-link to="" class="link">
         <TopImage
           :image-src="require('../assets/images/nike-top-2-1.jpg')"
           image-alt="Top画像1"
         />
         <div class="content">
-          <div class="textArea">
+          <div class="textarea">
             <h1 class="title">ひとりじゃみれない、夢に向かって。</h1>
             <p class="message">
               駅伝ランナーたちが新年に駆け抜ける、山岳風景からインスピレーションを受けたランニングコレクション「EKIDEN
@@ -18,7 +18,7 @@
               12月1日より日本先行で順次発売。
             </p>
           </div>
-          <div class="buttonArea">
+          <div class="button-area">
             <BasicButton label="メンズを見る" />
             <BasicButton label="ウィメンズを見る" />
             <BasicButton label="キッズを見る" />
@@ -26,66 +26,66 @@
             <BasicLink label="本プロモーション規約" />
           </div>
         </div>
-      </a>
+      </nuxt-link>
     </section>
-    <section class="sectionArea">
-      <a href="" class="link">
+    <section class="section-area">
+      <nuxt-link to="" class="link">
         <TopImage
           :image-src="require('../assets/images/nike-top-2-2.jpg')"
           image-alt="Top画像2"
         />
         <div class="content">
-          <div class="textArea">
+          <div class="textarea">
             <p class="message">
               レオパード柄のアイテムを大胆に着こなして、力強いスタイリングに挑戦
             </p>
           </div>
-          <div class="buttonArea">
+          <div class="button-area">
             <BasicButton label="コレクションを見る" />
           </div>
         </div>
-      </a>
+      </nuxt-link>
     </section>
-    <section class="sectionArea">
-      <a href="" class="link">
+    <section class="section-area">
+      <nuxt-link to="" class="link">
         <TopImage
           :image-src="require('../assets/images/nike-top-2-3.jpg')"
           image-alt="Top画像3"
         />
         <div class="content">
-          <div class="textArea">
+          <div class="textarea">
             <h4 class="title">JORDAN x PARIS SAINT-GERMAIN コレクション</h4>
             <p class="message">
               高級感と伝説の風格を備えるジョーダンブランドとパリ・サンジェルマン。<br />
               一味違うカラーと斬新なシルエットで、コラボレーションを新たな次元へ。
             </p>
           </div>
-          <div class="buttonArea">
+          <div class="button-area">
             <BasicButton label="商品を見る" />
           </div>
         </div>
-      </a>
+      </nuxt-link>
     </section>
-    <section class="sectionArea">
-      <a href="" class="link -positionRel">
+    <section class="section-area">
+      <nuxt-link to="" class="link -positionRel">
         <TopImage
           :image-src="require('../assets/images/nike-top-2.jpg')"
           image-alt="Top画像4"
         />
         <div class="content -positionAbsLeft">
-          <div class="textArea">
+          <div class="text-area">
             <h4 class="title -white">冬の運動に最適な最新コレクション。</h4>
           </div>
-          <div class="buttonArea -positionAbsLeft">
-            <BasicButton label="コレクションを見る" anotherClassName="-white" />
+          <div class="button-area -positionAbsLeft">
+            <BasicButton label="コレクションを見る" class="-white" />
           </div>
         </div>
-      </a>
+      </nuxt-link>
     </section>
-    <section class="sectionArea">
-      <a href="" class="link -noLink">
+    <section class="section-area">
+      <nuxt-link to="" class="link -noLink">
         <div class="content -left">
-          <div class="textArea">
+          <div class="textarea">
             <h1 class="title">
               Best Seller - アパレル売れ筋ランキング (12.8-12.21)
             </h1>
@@ -95,16 +95,16 @@
             </p>
           </div>
         </div>
-      </a>
-      <div class="sliderArea">
+      </nuxt-link>
+      <div class="slider-area">
         <Slider
           sliderTitle="メンズ"
-          sliderSizeClass="-apparel"
+          class="-apparel"
           :sliderImages="mensApparelRanking"
         />
         <Slider
           sliderTitle="ウィメンズ"
-          sliderSizeClass="-apparel"
+          class="-apparel"
           :sliderImages="womensApparelRanking"
         />
       </div>

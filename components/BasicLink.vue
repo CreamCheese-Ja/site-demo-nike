@@ -1,5 +1,5 @@
 <template>
-  <a href="" class="c-basic-link">{{ label }}</a>
+  <nuxt-link to="/" class="basic-link">{{ label }}</nuxt-link>
 </template>
 
 <script lang="ts">

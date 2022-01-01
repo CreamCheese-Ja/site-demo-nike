@@ -1,6 +1,6 @@
-.o-layout-header {
+.layout-header {
   background-color: $color-gray-light;
-  > .headerTop {
+  > .header-top {
     display: flex;
     justify-content: space-between;
     padding: 0 42px 0 40px;
@@ -19,7 +19,7 @@
       }
     }
   }
-  > .headerMain {
+  > .header-main {
     position: relative;
     background-color: $color-white;
     display: flex;
@@ -42,14 +42,14 @@
         }
       }
     }
-    > .operationArea {
+    > .operation-area {
       display: flex;
       > .iconArea {
         margin-left: 20px;
       }
     }
   }
-  > .headerBottom {
+  > .header-bottom {
     background-color: $color-gray-light;
     border-bottom: 1px solid $color-gray;
     > .message {
@@ -58,7 +58,7 @@
       padding-top: 7px;
       padding-bottom: 2px;
       line-height: 20px;
-      > .subMessage {
+      > .sub-message {
         font-size: $font-size-small;
         > .link {
           text-decoration: underline;
@@ -68,9 +68,9 @@
   }
 }
 
-.o-layout-main {
+.layout-main {
   margin: 0 56px;
-  > .sectionArea {
+  > .section-area {
     margin-bottom: 80px;
     > .link {
       &.-positionRel {
@@ -97,7 +97,7 @@
             }
           }
         }
-        > .textArea {
+        > .text-area {
           margin-bottom: 15px;
           > .title {
             margin-bottom: 30px;
@@ -113,7 +113,7 @@
             margin: auto;
           }
         }
-        > .buttonArea {
+        > .button-area {
           width: 60%;
           margin: auto;
           &.-positionAbsLeft {
@@ -123,7 +123,7 @@
         }
       }
     }
-    > .sliderArea {
+    > .slider-area {
       margin-right: calc(50% - 50vw);
       margin-left: calc(50% - 50vw);
       display: flex;
@@ -131,17 +131,17 @@
   }
 }
 
-.o-layout-footer {
+.layout-footer {
   > .content {
     display: flex;
     justify-content: space-between;
     background-color: $color-black;
     padding: 40px 40px 50px;
-    > .menuArea {
+    > .menu-area {
       display: flex;
       > .menu {
         width: 260px;
-        > .menuItem {
+        > .menu-item {
           margin-bottom: 4px;
           &.-sub {
             margin-bottom: 0px;

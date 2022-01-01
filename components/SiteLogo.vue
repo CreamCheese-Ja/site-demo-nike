@@ -1,11 +1,11 @@
 <template>
   <div>
-    <a href="">
+    <nuxt-link to="">
       <img
         src="../assets/images/swoosh.png"
         alt="nike-logo"
-        class="c-nike-logo"
+        class="nike-logo"
       />
-    </a>
+    </nuxt-link>
   </div>
 </template>

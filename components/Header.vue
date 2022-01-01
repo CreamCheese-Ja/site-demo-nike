@@ -1,37 +1,47 @@
 <template>
-  <header class="o-layout-header">
-    <div class="headerTop">
+  <header class="layout-header">
+    <div class="header-top">
       <div>
-        <a href="">
+        <nuxt-link to="">
           <img
             src="../assets/images/jordan.svg"
             alt="jordan-logo"
-            class="c-jordan-logo"
+            class="jordan-logo"
           />
-        </a>
+        </nuxt-link>
       </div>
       <ul class="menu">
-        <li class="item"><a href="" class="link">ヘルプ</a></li>
+        <li class="item"><nuxt-link to="" class="link">ヘルプ</nuxt-link></li>
         <li class="item">|</li>
-        <li class="item"><a href="" class="link">ここから始めよう</a></li>
+        <li class="item">
+          <nuxt-link to="" class="link">ここから始めよう</nuxt-link>
+        </li>
         <li class="item">|</li>
-        <li class="item"><a href="" class="link">ログイン</a></li>
+        <li class="item">
+          <nuxt-link to="" class="link">ログイン</nuxt-link>
+        </li>
       </ul>
     </div>
-    <div class="headerMain">
+    <div class="header-main">
       <SiteLogo />
       <ul class="menu">
-        <li class="item"><a href="" class="link">NEW RELEASES</a></li>
-        <li class="item"><a href="" class="link">MEN</a></li>
-        <li class="item"><a href="" class="link">WOMEN</a></li>
-        <li class="item"><a href="" class="link">KIDS</a></li>
-        <li class="item"><a href="" class="link">CUSTOMIZE</a></li>
-        <li class="item"><a href="" class="link">SALE</a></li>
-        <li class="item"><a href="" class="link">COLLECTIONS</a></li>
+        <li class="item">
+          <nuxt-link to="" class="link">NEW RELEASES</nuxt-link>
+        </li>
+        <li class="item"><nuxt-link to="" class="link">MEN</nuxt-link></li>
+        <li class="item"><nuxt-link to="" class="link">WOMEN</nuxt-link></li>
+        <li class="item"><nuxt-link to="" class="link">KIDS</nuxt-link></li>
+        <li class="item">
+          <nuxt-link to="" class="link">CUSTOMIZE</nuxt-link>
+        </li>
+        <li class="item"><nuxt-link to="" class="link">SALE</nuxt-link></li>
+        <li class="item">
+          <nuxt-link to="" class="link">COLLECTIONS</nuxt-link>
+        </li>
       </ul>
-      <div class="operationArea">
+      <div class="operation-area">
         <SearchBar />
-        <div class="iconArea">
+        <div class="icon-area">
           <HeaderIcon
             :image-src="require('../assets/images/icons/favorite.svg')"
             image-alt="お気に入り"
@@ -43,11 +53,11 @@
         </div>
       </div>
     </div>
-    <div class="headerBottom">
+    <div class="header-bottom">
       <p class="message">
         最新のプロダクト、特別なサービス、限定コンテンツが集結。<br />
-        <span class="subMessage"
-          ><a href="" class="link">NIKEアプリをチェック</a></span
+        <span class="sub-message"
+          ><nuxt-link to="" class="link">NIKEアプリをチェック</nuxt-link></span
         >
       </p>
     </div>

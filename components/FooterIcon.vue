@@ -1,5 +1,5 @@
 <template>
-  <a href="" class="c-icon-area">
+  <nuxt-link to="/" class="footer-icon-area">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon"
@@ -8,7 +8,7 @@
     >
       <path :d="path"></path>
     </svg>
-  </a>
+  </nuxt-link>
 </template>
 
 <script lang="ts">
